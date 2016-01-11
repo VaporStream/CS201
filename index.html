@@ -2,6 +2,28 @@
 <html>
 
 	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<script src="js/vendor/jquery.hashchange.min.js"></script>
+		<script src="js/vendor/jquery.easytabs.min.js"></script>
+
+		<script src="js/main.js"></script>
 		<title>Garrett Parsons</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
 	</head>
@@ -9,25 +31,77 @@
 	<body>
 
 		<div class="header">
-			<h1>Garrett Parsons</h1>
-		</div>
-		<div class="menu">
-			<h2 class="menu-title">Menu</h2>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="security.html">Security</a></li>
-				<li><a href="devices.html">Devices</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="hlinks.html">Hacking Links</a></li>
-			</ul>
-		</div>
-
-
-		<div class="main">
-			<div class="sidebar">
-				<h2>Skills</h2>
+			<div class="img-header">
+				<img src="img/garrett.jpg" alt="Garrett" width="200">
 			</div>
-			<!-- <script>
+			<div class="txt-header">
+				<h1>Garrett Parsons</h1>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">About Me</a>
+					<a class="navbar-brand" href="#">Resume</a>
+					<a class="navbar-brand" href="#">Contact Info</a>
+				</div>
+		</nav>
+
+
+				<div class="body">
+					<div class="sidebar">
+						<h3>Skills</h3>
+						<h5>Software</h5>
+						<div class="meter emerald">
+							<span style="width: 33.3%"><span>Photoshop</span></span>
+						</div>
+						<div class="meter carrot">
+								<span style="width: 65%"><span>Microsoft Access</span></span>
+						</div>
+						<div class="meter wisteria">
+								<span style="width: 50%"><span>Wordpress</span></span>
+						</div>
+						<div class="meter sunflower">
+								<span style="width: 40%"><span>Drupal</span></span>
+						</div>
+						<div class="meter midnight">
+								<span style="width: 65%"><span>Visual Studio</span></span>
+						</div>
+						<div class="meter pomengrate">
+								<span style="width: 75%"><span>OSX</span></span>
+						</div>
+						<div class="meter asbestos">
+								<span style="width: 75%"><span>Linux</span></span>
+						</div>
+						<div class="break"></div>
+
+						<h5>Programming Language</h5>
+
+						<div class="meter emerald">
+								<span style="width: 70%"><span>HTML/CSS</span></span>
+						</div>
+						<div class="meter carrot">
+								<span style="width: 40%"><span>C#</span></span>
+						</div>
+						<div class="meter wisteria">
+								<span style="width: 45%"><span>jQuery/JavaScript</span></span>
+						</div>
+						<div class="meter sunflower">
+								<span style="width: 55%"><span>Java</span></span>
+						</div>
+						<div class="meter asbestos">
+								<span style="width: 55%"><span>Python</span></span>
+						</div>
+					</div>
+					<!-- <script>
 				function respond() {
 					var name = document.getElementById("name").value;
 					var message;
@@ -50,55 +124,74 @@
 					document.getElementById("answer").innerHTML = message;
 				}
 			</script> -->
-		</div>
-		<div class="content">
-			<h2 class="title">Biography</h2>
-			<p>
 
-			</p>
-
-			<h2>Hockey</h2>
-			<p>
-
-			</p>
-
-
-			<h3>Hockey links</h3>
-			<a class="linkbox" href="http://www.nhl.com">National Hockey League</a>
-
-
-			<a href="http://www.espn.go.com/nhl">
-				<img class="logo" src="ESPN.jpg" alt="ESPN logo" width="200">
-			</a>
-			<br>
-
-			<h2 class="interests">Interests</h2>
-			<br>
-			<br>
-			<br>
-			<ul>
-				<li>Hiking/SnowShoeing</li>
-			</ul>
-
-			<table>
-				<tr>
-					<th>Sports</th>
-					<th>Other</th>
-				</tr>
-				<tr>
-					<td>Hockey: Both playing and watching</td>
-					<td>Computers and Electronics</td>
-				</tr>
-				<tr>
-					<td>Playing golf</td>
-
-				</tr>
-				<tr>
-					<td>Racquet Ball</td>
-					<td>Hiking/SnowShoeing</td>
-				</tr>
-			</table>
-		</div>
+					<div class="content">
+						<h3>Education</h3>
+						<ul class="list unstyled">
+								<h5>BYU</h5><span class="label label-success">2013-2016</span>
+									<ul>
+											<li>
+												Bachelor of Science, Information Systems
+											</li>
+									</ul>
+								<h5>USU</h5><span class="label label-success">2009-2010</span>
+										<ul>
+												<li>
+													Bachelor of Science, Pre-Med
+												</li>
+										</ul>
+						</ul>
+						
+						<h3>Work Experience</h3>
+						<h5>Positive Learning</h5><span class="label label-info">November 2015 - Current</span>
+							<ul class="list-unstyled">
+								<ul>
+									<li>
+										Unit Testing
+									</li>
+									<li>
+										API Documentation
+									</li>
+							</ul>
+						<h5>QA Engineer</h5><span class="label label-info">April 2015 - October 2015</span>
+							<ul>
+								<li>
+									Used in-house developer tools to find and debug content and media files within the Seminaries and Institutes portfolio
+								</li>
+								<li>
+									Worked with various teams to get reported bugs resolved and have finished content and media published live to the web
+								</li>
+							</ul>
+						<h5>Relate Institute Web Developer</h5><span class="label label-info">January 2014 - September 2014</span>
+							<ul>
+								<li>
+									Debugged website and fixed typographical errors
+								</li>
+								<li>
+									Documented general information about website for an easier programming experience
+								</li>
+							</ul>
+						<h5>Assistant to the Operation Manager</h5><span class="label label-info">June 2014 - August 2014</span>
+							<ul>
+								<li>
+									Improved the operations department efficiency by 25% by mapping the locations of the electrical, water and sewer box locations
+								</li>
+								<li>
+									Created pivot tables showing employee efficiency, so that event costs could be more accurately calculated
+								</li>
+							</ul>
+						<h5>Web Developer Intern</h5><span class="label label-info">January 2014 - April 2014</span>
+							<ul>
+								<li>
+									As Project Manager worked directly with client to build a website for their specific business needs
+								</li>
+								<li>
+									SEO optimization
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
 	</body>
 
 </html>

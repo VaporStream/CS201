@@ -4,20 +4,34 @@
   padding: 5px;
 }
 
-body {
-  width: 960px;
-  margin: auto;
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:auto;
+  display: block;
+  position: relative;
 }
 
-.header {
-  background-color: #b30718;
-  color: #ecf0f1;
-  padding: 10px;
-  padding-top: 20px;
+.img-header {
+  float: left;
+  height: auto;
+  margin-right: 20px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.txt-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
 }
 
 .menu-title {
   display: none;
+  outline-style: solid;
 }
 .menu ul {
   margin-top:0;
@@ -37,7 +51,29 @@ body {
 
 }
 
+body {
+  width: 1020px;
+  margin: auto;
+  padding-top: 120px;
+  background: url(img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /*Skills Meter*/
+
+.meter {
+  height: 24px;  /* Can be anything */
+  position: relative;
+  border: 1px solid #f1f1f1;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
 .meter > span {
   display: block;
   height: 100%;
@@ -49,20 +85,111 @@ body {
   overflow: hidden;
 }
 
-.menu a:hover {
-  background-color: #32567d;
+.meter > span  > span{
+  margin-left: 4px;
+  color: #fff;
+}
+.meter > span:after, .animate > span > span {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-image:
+  -webkit-gradient(linear, 0 0, 100% 100%,
+    color-stop(.25, rgba(255, 255, 255, .2)),
+    color-stop(.25, transparent), color-stop(.5, transparent),
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.75, rgba(255, 255, 255, .2)),
+    color-stop(.75, transparent), to(transparent)
+    );
+  background-image:
+  -moz-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent
+    );
+  z-index: 1;
+  -webkit-background-size: 50px 50px;
+  -moz-background-size: 50px 50px;
+  -webkit-animation: move 2s linear infinite;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
 }
 
-.menu {
+.animate > span:after {
+  display: none;
+}
 
-background: linear-gradient(to bottom left, #ecf0f1, #26223b, #b30718 );
+@-webkit-keyframes move {
+  0% {
+   background-position: 0 0;
+ }
+ 100% {
+   background-position: 50px 50px;
+ }
+}
 
+.work li span {
+    float: right;
+}
+
+/*Custom Colors*/
+.emerald > span {
+  background-color: #2ecc71;
+}
+.carrot > span {
+  background-color: #e67e22;
+}
+.wisteria > span{
+  background-color: #8e44ad;
+}
+.sunflower > span{
+  background-color: #f1c40f;
+}
+.midnight > span{
+  background-color: #2c3e50;
+}
+.pomengrate > span{
+  background-color: #c0392b;
+}
+.asbestos > span{
+  background-color: #7f8c8d;
+}
+
+.body {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 700px;
+  margin:auto;
+  display: block;
+  position: relative;
 }
 
 .sidebar {
   width: 320px;
   float: left;
-  margin-right: 20px;
+  margin-left: -10px;
+  margin-top: -30px;
+  background-color: white;
+  background-size: auto;
+  border-right: 1px solid #f1f1f1;
 }
 
 .sidebar p {
@@ -77,8 +204,12 @@ background: linear-gradient(to bottom left, #ecf0f1, #26223b, #b30718 );
 
 .content {
     display: inline-block;
-    width: 600px;
-    float: left;
+    width: 700px;
+    float: right;
+    background-color: white;
+    padding-right: 40px;
+    margin-top: -30px;
+    margin-right: -10px;
 }
 
 h2.title {
@@ -90,24 +221,22 @@ h2.title {
 
 .linkbox
  {
- color: white;
- font-size: 19px;
- text-align:center;
- width: 200px;
- background-color: #1A3380;
- display: block;
- margin: 20px;
- padding: 30px;
- border-radius: 30px;
- border: 1px solid black;
-
+   color: white;
+   font-size: 19px;
+   text-align:center;
+   width: 200px;
+   background-color: #1A3380;
+   display: block;
+   margin: 20px;
+   padding: 30px;
+   border-radius: 30px;
+   border: 1px solid black;
  }
 
 .logo
  {
- margin: 20px;
- padding: 30px;
-
+   margin: 20px;
+   padding: 30px;
  }
 
  .usimage
@@ -117,21 +246,22 @@ h2.title {
  margin-right:auto;
 }
 
-body {
-  width: 960px;
-  margin: auto;
-  background-color: #AAAAA6;
-}
-
 h2.usa{
-padding-left: 32px;
+  padding-left: 32px;
 }
 
 h2.interests
 {
-float: left;
+  float: left;
 }
 
+.label-info {
+  float: right;
+}
+
+.label-success {
+  float: right;
+}
 
 .left {
   width: 310px;
@@ -152,8 +282,8 @@ float: left;
 }
 
  a:hover{
- background-color: red;
- color: black;
+   background-color: red;
+   color: black;
  }
 
  a:link {text-decoration:none;}
@@ -168,9 +298,9 @@ table {
   border:1px solid black;
   text-align:left;
    padding:5px;
-  }
+}
 
-  th{
+  th {
    border:1px solid black;
    text-align:center;
-   }
+  }
