@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
@@ -49,12 +49,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">About Me</a>
+					<a class="navbar-brand" href="About_Me.html">About Me</a>
 					<a class="navbar-brand" href="#">Resume</a>
 					<a class="navbar-brand" href="#">Contact Info</a>
 				</div>
 		</nav>
-
 
 				<div class="body">
 					<div class="sidebar">
@@ -101,29 +100,6 @@
 								<span style="width: 55%"><span>Python</span></span>
 						</div>
 					</div>
-					<!-- <script>
-				function respond() {
-					var name = document.getElementById("name").value;
-					var message;
-					if (name == "") {
-						message = "<p>You must hate sports!</p>";
-					} else {
-						message = "<p> " + name + " is a great athlete. </P>";
-					}
-
-					var radios = document.getElementsByName("question");
-					var response;
-					if (radios[0].checked) {
-						response = "<p>Go to one of their games.</p>";
-					} else if (radios[1].checked) {
-						response = "<p>They sell them online....</p>";
-					} else {
-						response = "<img src='annoyed.png'>";
-					}
-					message = message + response;
-					document.getElementById("answer").innerHTML = message;
-				}
-			</script> -->
 
 					<div class="content">
 						<h3>Education</h3>
@@ -141,7 +117,7 @@
 												</li>
 										</ul>
 						</ul>
-						
+
 						<h3>Work Experience</h3>
 						<h5>Positive Learning</h5><span class="label label-info">November 2015 - Current</span>
 							<ul class="list-unstyled">
@@ -192,6 +168,42 @@
 						</ul>
 					</div>
 				</div>
+		<footer>
+
+				<div id="question-field">
+				 <h4>Do you like my resume?</h4>
+					<br>
+					<input type="radio" name="question" />
+					Yes
+					<br>
+					<input type="radio" name="question" />
+					No
+					<br>
+				</div>
+				<button onclick="respond()">Submit</button>
+
+				<div id="answer">
+					<!-- the response from the selected choice will be displayed -->
+				</div>
+
+				<script>
+
+				function respond() {
+
+					var radios = document.getElementsByName("question");
+				  var response;
+					var message = "";
+				  if (radios[0].checked) {
+				    response = "<p>Thanks</p>";
+				  }
+					else {
+				    response = "<p>How can I make it better?</p>";
+				  }
+				  message = message + response;
+				  document.getElementById("answer").innerHTML = message;
+				}
+			</script>
+		</footer>
 	</body>
 
 </html>
